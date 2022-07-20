@@ -9,6 +9,7 @@ chrome_options.binary_location = 'C:/Program Files/BraveSoftware/Brave-Browser/A
 browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
 
 browser.get('brave://settings/shields')
+
 ''' Go to to brave://settings/shields
     Go to Block scripts toggle and inspect element
     Find the knob -> right-click -> copy -> JS_path
