@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location = 'C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe'
 browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
+
 browser.get('brave://settings/shields')
 ''' Go to to brave://settings/shields
     Go to Block scripts toggle and inspect element
